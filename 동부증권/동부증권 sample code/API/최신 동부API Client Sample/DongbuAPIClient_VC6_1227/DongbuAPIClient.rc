@@ -1,0 +1,304 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Korean resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\DongbuAPIClient.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.kor\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\DongbuAPIClient.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DONGBUAPICLIENT_DIALOG DIALOGEX 0, 0, 275, 379
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "동부API Client Sample(VC6)"
+FONT 9, "굴림"
+BEGIN
+    EDITTEXT        IDC_EDT_ID,72,17,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_PWD,72,34,40,12,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_CERT_PWD,72,49,40,12,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    CONTROL         "로그인창 보이기",IDC_CHK_SHOWLOGIN,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,127,17,61,11
+    CONTROL         "다중접속",IDC_CHK_MULTICONN,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,127,35,39,11
+    EDITTEXT        IDC_EDT_NICK,200,35,62,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "접속",IDC_BTN_RUN,127,51,45,16
+    PUSHBUTTON      "접속해제",IDC_BTN_STOP,175,51,59,16,WS_DISABLED
+    RTEXT           "ID",IDC_STATIC,23,21,44,8
+    RTEXT           "암호",IDC_STATIC,23,35,44,8
+    RTEXT           "공인인증 암호",IDC_STATIC,23,51,44,8
+    PUSHBUTTON      "잔고내역조회",IDC_BTN_JANGO,33,121,55,14,WS_DISABLED
+    LISTBOX         IDC_LIST,7,294,221,78,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "주문전송",IDC_BTN_ORDER,33,171,55,14,WS_DISABLED
+    GROUPBOX        "실시간 요청 등록 /해지",IDC_STATIC,8,196,257,94
+    PUSHBUTTON      "체결내역조회",IDC_BTN_CHEGYUL,91,121,55,14,WS_DISABLED
+    PUSHBUTTON      "평가현황조회",IDC_BTN_EVAL,150,121,55,14,WS_DISABLED
+    PUSHBUTTON      "수수료/주문가능금액",IDC_BTN_FEE,33,137,69,14,
+                    WS_DISABLED
+    PUSHBUTTON      "선옵계좌리스트",IDC_BTN_ACCLIST,155,83,63,15,
+                    WS_DISABLED
+    PUSHBUTTON      "CLEAR",IDC_BTN_CLEARLIST,229,295,27,12
+    RTEXT           "닉네임",IDC_STATIC,176,36,23,8
+    PUSHBUTTON      "옵션종목별매도증거금",IDC_BTN_DEPOSIT,106,137,88,14,
+                    WS_DISABLED
+    PUSHBUTTON      "신규/청산 가능수량 조회",IDC_BTN_ABLEQTY,94,171,86,14,
+                    WS_DISABLED
+    GROUPBOX        "계좌 조회",IDC_STATIC,7,75,258,28
+    COMBOBOX        IDC_CMB_ACCOUNT,47,85,103,143,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    RTEXT           "계좌",IDC_STATIC,22,87,17,8
+    GROUPBOX        "접속",IDC_STATIC,7,7,258,64
+    GROUPBOX        "조회 예제창",IDC_STATIC,7,107,258,50
+    LTEXT           "선물코드",IDC_STATIC,17,219,31,8
+    EDITTEXT        IDC_EDT_FUTCODES,50,217,90,12,ES_AUTOHSCROLL
+    CONTROL         "시세(SC0) 등록",IDC_BTN_SC0,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,142,217,53,13
+    CONTROL         "호가(SH0)등록",IDC_BTN_SH0,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,198,217,53,13
+    LTEXT           "옵션코드",IDC_STATIC,17,245,31,8
+    EDITTEXT        IDC_EDT_OPTCODES,50,243,90,12,ES_AUTOHSCROLL
+    CONTROL         "시세(OC0)등록",IDC_BTN_OC0,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,142,243,53,13
+    CONTROL         "호가(OH0)등록",IDC_BTN_OH0,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,198,243,53,13
+    GROUPBOX        "",IDC_STATIC,13,208,242,27
+    GROUPBOX        "",IDC_STATIC,13,234,242,27
+    CONTROL         " 체결(XF2)등록",IDC_BTN_XF2,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,142,267,53,13
+    CONTROL         " 잔고(XF3)등록",IDC_BTN_XF3,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,198,268,53,13
+    LTEXT           "ID",IDC_STATIC,34,268,10,8
+    EDITTEXT        IDC_EDT_ID2,50,266,40,12,ES_AUTOHSCROLL | WS_DISABLED
+    GROUPBOX        "",IDC_STATIC,13,259,242,25
+    GROUPBOX        "주문 관련 예제창",IDC_STATIC,8,161,258,28
+END
+
+IDD_DLG_OPTIONDEPOSIT DIALOG DISCARDABLE  0, 0, 323, 70
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "옵션 종목별 매도증거금"
+FONT 9, "굴림"
+BEGIN
+    COMBOBOX        IDC_CMB_ITEM,32,4,63,143,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CMB_BASEASSET,134,4,63,143,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CMB_MONTH,222,4,40,143,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "조회",IDC_BTN_INQURY,267,3,50,15
+    LTEXT           "상품군",IDC_STATIC,8,8,22,8
+    LTEXT           "기초자산",IDC_STATIC,101,8,31,8
+    LTEXT           "월물",IDC_STATIC,202,8,17,8
+    LISTBOX         IDC_LIST,7,23,309,40,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DLG_ORDER DIALOG DISCARDABLE  0, 0, 274, 120
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "주문관련 실행"
+FONT 9, "굴림"
+BEGIN
+    EDITTEXT        IDC_EDT_ACCOUNT,31,8,82,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_ACCTPWD,176,9,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_JONGMOK,29,35,48,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_PRICE,103,34,48,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_CMB_PRICETYPE,155,33,42,128,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDT_QTY,225,33,25,12,ES_AUTOHSCROLL
+    CONTROL         "매수",IDC_RADIO_MESU,"Button",BS_AUTORADIOBUTTON,27,55,
+                    29,12
+    CONTROL         "매도",IDC_RADIO_MEDO,"Button",BS_AUTORADIOBUTTON,60,55,
+                    29,12
+    PUSHBUTTON      "신규/청산가능수량",IDC_BTN_ABLEQTY,161,53,69,15
+    PUSHBUTTON      "주문",IDC_BTN_ORDER,232,53,32,15
+    LTEXT           "계좌",IDC_STATIC,11,11,17,8
+    RTEXT           "비밀번호",IDC_STATIC,136,11,34,8
+    GROUPBOX        "",IDC_STATIC,3,0,266,24
+    GROUPBOX        "",IDC_STATIC_ORDER,2,23,266,48
+    LTEXT           "종목",IDC_STATIC_JONGMOK,9,37,17,8
+    LTEXT           "수량",IDC_STATIC_QTY,205,36,17,8
+    LTEXT           "가격",IDC_STATIC_PRICE,84,36,17,8
+    LISTBOX         IDC_LIST,2,76,263,40,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DLG_QUERY DIALOG DISCARDABLE  0, 0, 306, 73
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 9, "굴림"
+BEGIN
+    EDITTEXT        IDC_EDT_ACCOUNT,25,12,82,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_ACCTPWD,130,13,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_DATE,229,13,43,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    PUSHBUTTON      "조회",IDC_BTN_INQURY,276,12,25,13
+    LTEXT           "계좌",IDC_STATIC,8,15,17,8
+    RTEXT           "비번",IDC_STATIC,111,15,17,8
+    LTEXT           "조회일(YYYYMMDD)",IDC_STATIC_DATE,158,15,66,8,
+                    SS_CENTERIMAGE | NOT WS_VISIBLE
+    GROUPBOX        "",IDC_STATIC,2,4,303,24
+    LISTBOX         IDC_LIST,3,31,297,36,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041204B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "DongbuAPIClient MFC 응용 프로그램\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "DongbuAPIClient\0"
+            VALUE "LegalCopyright", "Copyright (C) 2011\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "DongbuAPIClient.EXE\0"
+            VALUE "ProductName", "DongbuAPIClient 응용 프로그램\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_DONGBUAPICLIENT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 268
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 372
+    END
+
+    IDD_DLG_ORDER, DIALOG
+    BEGIN
+        RIGHTMARGIN, 267
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 118
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Korean resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE 18, 1
+#pragma code_page(949)
+#endif //_WIN32
+#include "res\DongbuAPIClient.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.kor\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

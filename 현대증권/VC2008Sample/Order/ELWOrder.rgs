@@ -1,0 +1,11 @@
+HKCR
+{
+	NoRemove AppID
+	{
+		{8949A218-823A-44F5-B8F8-99A4B977B46D} = s 'ELWOrder'
+		'ELWOrder.EXE'
+		{
+			val AppID = s {8949A218-823A-44F5-B8F8-99A4B977B46D}
+		}
+	}
+}

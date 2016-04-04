@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{97e5c687-1259-45e7-905d-a4e7268bfd5c}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{464ea497-6c02-43d8-b746-a3cde87bce19}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{5bde56ac-bab6-44de-aada-8314b59c1ef9}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{90900ee1-484f-4105-acba-fb1bcf107cf4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DongbuAPIClient.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DongbuAPIClientDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExInqueryDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExOptDepositDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExOrderDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Include\Registry.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="DongbuAPIClient.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DongbuAPIClient.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DongbuAPIClientDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExInqueryDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExOptDepositDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExOrderDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\DrcmDefine.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\DrcmStructDef.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Packet.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Registry.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\TR13118.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\TR13148.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\TR13615.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\TR13653.H">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\TR13655.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\TR14051.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\TR15812.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\TR15813.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\TR16260.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\TR20000.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\DongbuAPIClient.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="res\DongbuAPIClient.rc2">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,10 @@
+
+1. bit 전송 방식이 big endian 인지 little endian 인지 알려달라. 아마 big endian 으로 추정되지만 정확히 알려주셨으면 
+
+2. 설명세어는 session id를 평문으로 날리는데, session id 는 평문으로 날려도 괜찮은 건지? 노출되면 안되는 정보 아닌가?
+
+3. 세션당 서버의 처리량은 어느정도인가요?
+
+4. 배포된 session id 하나로 동시 접속이 되는건가요? 아니면 여러개의 session id를 받을 수 있나요?
+
+5. AnyLink-S_전문_Spec_배포판_V0.8_20160116.xlsx 문서에서 02.인터페이스전문1 에서 type(N, AN)과 fixtag는 어떤건가요?

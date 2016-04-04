@@ -1,0 +1,948 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 한국어 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#include ""res\\DongbuAPIClient_VC.rc2""  // Microsoft Visual C++ 이외의 다른 도구에서 편집한 리소스입니다.\r\n"
+    "#include ""l.KOR\\afxres.rc""          // 표준 구성 요소입니다.\r\n"
+    "#include ""l.KOR\\afxprint.rc""        // 인쇄 미리 보기 리소스\r\n"
+    "#if !defined(_AFXDLL)\r\n"
+    "#include ""l.KOR\\afxribbon.rc""               // MFC 리본 및 컨트롤 막대 리소스\r\n"
+    "#endif\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\DongbuAPIClient_VC.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+IDR_MAINFRAME_256       BITMAP                  "res\\Toolbar256.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 16
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+END
+
+IDR_MAINFRAME_256 TOOLBAR  16, 16
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "접속"
+    BEGIN
+        MENUITEM "로그인/로그아웃",                    IDM_LOGIN
+        MENUITEM SEPARATOR
+        MENUITEM "선옵 계좌리스트 조회",                 IDM_FO_ACCOUNTLIST
+        MENUITEM "주식 계좌리스트 조회",                 IDM_SK_ACCOUNTLIST
+        MENUITEM "끝내기(&X)",                     ID_APP_EXIT
+    END
+    POPUP "지수 선물옵션"
+    BEGIN
+        MENUITEM "선옵 주문",                       IDM_FO_ORDER
+        MENUITEM "선옵 신규/청산 주문가능 수량 조회",         IDM_FO_ABLEQTY
+        MENUITEM SEPARATOR
+        MENUITEM "선옵 체결내역 조회",                  IDM_FO_CHE
+        MENUITEM "선옵 미체결내역 조회",                 IDM_FO_MICHE
+        MENUITEM "선옵 잔고내역 조회",                  IDM_FO_JANGO
+        MENUITEM "선옵 예수금 현황",                   IDM_FO_DEPOSIT
+        MENUITEM SEPARATOR
+        MENUITEM "선물 호가",                       IDM_FUT_HOGA
+        MENUITEM "옵션 호가",                       IDM_OPT_HOGA
+        MENUITEM "선물 시세/호가 실시간데이터",             IDM_FUT_RT
+        MENUITEM "옵션 시세/호가 실시간데이터",             IDM_OPT_RT
+        MENUITEM SEPARATOR
+        MENUITEM "선물 종목찾기",                     IDM_FUT_SYMBOLFINDER
+        MENUITEM "옵션 종목찾기",                     IDM_OPT_SYMBOLFINDER
+    END
+    POPUP "주식 선물옵션"
+    BEGIN
+        MENUITEM "주식 선옵 주문",                    IDM_SFO_ORDER
+        MENUITEM "주식 선옵 신규/청산 주문가능 수량 조회",      IDM_SFO_ABLEQTY
+        MENUITEM SEPARATOR
+        MENUITEM "주식 선옵 체결내역 조회",               IDM_FO_CHE
+        MENUITEM "주식 선옵 미체결내역 조회",              IDM_FO_MICHE
+        MENUITEM "주식 선옵 잔고내역 조회",               IDM_FO_JANGO
+        MENUITEM "주식 선옵 예수금 현황",                IDM_FO_DEPOSIT
+        MENUITEM "주식 선물 시세/호가 실시간데이터",          IDM_SFUT_RT
+        MENUITEM "주식 옵션 시세/호가 실시간데이터",          IDM_SOPT_RT
+    END
+    POPUP "CME선물"
+    BEGIN
+        MENUITEM "CME선물 주문",                    IDM_CME_ORDER
+        MENUITEM "CME선물 신규/청산 주문가능 수량 조회",      IDM_CME_ABLEQTY
+        MENUITEM SEPARATOR
+        MENUITEM "CME선물 체결내역 조회",               IDM_CME_CHE
+        MENUITEM "CME선물 미체결내역 조회",              IDM_CME_MICHE
+        MENUITEM "CME선물 잔고내역 조회",               IDM_CME_JANGO
+        MENUITEM "CME선물 예수금 현황",                IDM_CME_DEPOSIT
+        MENUITEM SEPARATOR
+        MENUITEM "CME 투자자 시간대별 추이",             IDM_CME_INVESTCHG
+        MENUITEM SEPARATOR
+        MENUITEM "CME선물 시세/호가 실시간데이터",          IDM_CME_RT
+    END
+    POPUP "주식/ETF"
+    BEGIN
+        MENUITEM "주식 주문",                       IDM_SK_ORDER
+        MENUITEM "주식 신규/청산 주문가능 수량 조회",         IDM_SK_ABLEQTY
+        MENUITEM "주식 체결내역 조회",                  IDM_SK_CHE
+        MENUITEM "주식 미체결내역 조회",                 IDM_SK_MICHE
+        MENUITEM "주식 잔고내역 조회",                  IDM_SK_JANGO
+        MENUITEM "주식 예수금 현황",                   IDM_SK_DEPOSIT
+        MENUITEM SEPARATOR
+        MENUITEM "투자자 당일매매추정(0192)",            IDM_SK_INVESTTODAY
+        MENUITEM "투자자/프로그램 매매종합",               IDM_SK_INVEST
+        MENUITEM SEPARATOR
+        MENUITEM "주식 시세/호가 실시간데이터",             IDM_SK_RT
+        MENUITEM SEPARATOR
+        MENUITEM "주식 현재가",                      IDM_SK_SISE
+        MENUITEM "주식 호가",                       IDM_SK_HOGA
+        MENUITEM SEPARATOR
+        MENUITEM "주식 서버조건주문",                   IDM_SK_SVRORDER_SETALL
+        MENUITEM "MyTest",                      IDM_MY_TEST
+    END
+    POPUP "도움말(&H)"
+    BEGIN
+        MENUITEM "동부API 사용예제(&A)...",           ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "DongbuAPIClient_VC 정보"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,21,20
+    LTEXT           "DongbuAPIClient_VC, 버전 1.0",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2013",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "확인",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_DLG_LOGIN DIALOGEX 0, 0, 239, 292
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "로그인 예제"
+FONT 9, "돋움", 400, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EDT_ID,54,7,69,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_PWD,54,24,69,14,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_CERT_PWD,54,41,69,14,ES_PASSWORD | ES_AUTOHSCROLL
+    CONTROL         "다중접속 허용",IDC_CHK_MULTICONN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,22,147,62,11
+    EDITTEXT        IDC_EDT_NICK,93,165,69,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "로그인",IDC_BTN_LOGIN,125,265,51,20
+    PUSHBUTTON      "로그아웃",IDC_BTN_LOGOUT,180,265,51,20
+    GROUPBOX        " 다중 접속 허용 여부 ",IDC_STATIC,8,128,223,88
+    LTEXT           "다중접속시 사용자명",IDC_STATIC,22,167,66,13
+    LTEXT           "* 다중접속일경우 로그인ID 대신 사용자명이 트레이정보에 표시됨.",IDC_STATIC,22,187,204,10
+    RTEXT           "로그인 ID",IDC_STATIC,7,7,43,10
+    RTEXT           "로그인 암호",IDC_STATIC,7,27,43,8
+    RTEXT           "공인인증 암호",IDC_STATIC,7,46,45,10
+    GROUPBOX        "동부 로그인 화면 표시 여부",IDC_STATIC,7,71,224,50
+    CONTROL         "동부 로그인창 보이기",IDC_CHK_SHOWLOGIN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,87,76,11
+    LTEXT           "* 동부 로그인 화면을 스킵하고 로그인을 할 수 있는 옵션.",IDC_STATIC,14,106,194,10
+    LTEXT           "* 다중접속일경우 반드시 입력해야함.",IDC_STATIC,22,199,204,10
+    LISTBOX         IDC_LIST,7,221,224,37,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DLG_ABLEQTY DIALOGEX 0, 0, 227, 209
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "신규/청산 주문가능 수량조회 예제"
+FONT 9, "돋움", 400, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EDT_ACCOUNT,46,17,74,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_ACCTPWD,166,17,44,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_JONGMOK,51,46,54,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_PRICE,51,65,54,13,ES_AUTOHSCROLL
+    COMBOBOX        IDC_CMB_PRICETYPE,50,82,55,14,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "신규/청산 주문가능 수량",IDC_BTN_ABLEQTY,124,46,87,28
+    GROUPBOX        "계좌",IDC_STATIC,7,7,213,27
+    GROUPBOX        "",IDC_STATIC,7,36,213,105
+    RTEXT           "종목",IDC_STATIC,24,49,18,10
+    RTEXT           "가격",IDC_STATIC,24,68,18,10
+    LTEXT           "계좌번호",IDC_STATIC,15,20,30,10
+    LTEXT           "비밀번호",IDC_STATIC,133,19,31,10
+    RTEXT           "주문유형",IDC_STATIC,10,84,32,10
+    LISTBOX         IDC_LIST,7,146,213,56,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "매수",IDC_RADIO_MESU,"Button",BS_AUTORADIOBUTTON,50,106,27,12
+    CONTROL         "매도",IDC_RADIO_MEDO,"Button",BS_AUTORADIOBUTTON,82,106,27,12
+    RTEXT           "주문구분",IDC_STATIC,10,107,32,10
+    CONTROL         "신용 매수 가능수량",IDC_CHK_CREDITORDER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,125,73,12
+    COMBOBOX        IDC_CMB_CREDITGUBUN,97,124,52,59,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DLG_ORDER DIALOGEX 0, 0, 205, 232
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "주문 예제"
+FONT 9, "돋움", 400, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EDT_ACCOUNT,54,17,54,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_ACCTPWD,146,16,44,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_JONGMOK,54,45,54,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_PRICE,54,64,54,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_QTY,54,84,54,13,ES_AUTOHSCROLL
+    COMBOBOX        IDC_CMB_PRICETYPE,54,104,55,62,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDT_ORGNO,54,127,54,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "매수",IDC_BTN_MESU,125,45,40,18
+    PUSHBUTTON      "매도",IDC_BTN_MEDO,125,68,40,18
+    PUSHBUTTON      "정정",IDC_BTN_MODIFY,125,101,40,18
+    PUSHBUTTON      "취소",IDC_BTN_CANCEL,125,123,40,18
+    GROUPBOX        "계좌",-1,7,7,191,27
+    GROUPBOX        "",-1,7,34,191,132
+    RTEXT           "종목",-1,24,48,18,10
+    RTEXT           "가격",-1,24,67,18,10
+    RTEXT           "계좌번호",-1,15,20,29,10
+    LTEXT           "비밀번호",-1,114,20,29,10
+    RTEXT           "수량",-1,24,87,18,10
+    RTEXT           "주문유형",-1,10,106,32,10
+    RTEXT           "*원주문번호",-1,12,131,38,10
+    LISTBOX         IDC_LIST,7,169,191,56,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "* 정정/취소 주문시에 반드시 원주문번호 입력해야함.",-1,13,149,173,8
+END
+
+IDD_DLG_JANGO DIALOGEX 0, 0, 251, 232
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "잔고 내역 조회"
+FONT 9, "돋움", 400, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EDT_ACCOUNT,47,8,60,13,ES_AUTOHSCROLL
+    RTEXT           "계좌번호",-1,13,10,30,10
+    LISTBOX         IDC_LIST,7,44,237,181,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "조회",IDC_BTN_INQUERY,197,6,40,16
+    CONTROL         " 잔고 실시간 데이터 요청",IDC_CHK_REALTIME,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,27,90,9
+END
+
+IDD_DLG_CHE DIALOGEX 0, 0, 290, 232
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "체결/미체결내역"
+FONT 9, "돋움", 400, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EDT_ACCOUNT,47,8,60,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_ACCTPWD,146,7,44,13,ES_AUTOHSCROLL
+    RTEXT           "계좌번호",-1,13,10,30,10
+    LTEXT           "비밀번호",-1,114,9,29,10
+    LISTBOX         IDC_LIST,7,42,276,183,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "조회",IDC_BTN_INQUERY,197,6,40,16
+    CONTROL         " 체결 실시간 데이터 요청",IDC_CHK_REALTIME,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,27,90,9
+    PUSHBUTTON      "다음",IDC_BTN_INQUERY_NEXT,243,7,40,16,WS_DISABLED
+END
+
+IDD_DLG_DEPOSIT DIALOGEX 0, 0, 235, 94
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "평가현황조회"
+FONT 9, "돋움", 400, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EDT_ACCOUNT,44,7,52,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_ACCTPWD,44,23,35,13,ES_AUTOHSCROLL
+    RTEXT           "계좌번호",-1,7,9,30,10
+    RTEXT           "비밀번호",-1,7,25,30,10
+    LISTBOX         IDC_LIST,7,40,220,47,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "조회",IDC_BTN_INQUERY,190,7,33,20
+    EDITTEXT        IDC_EDT_DATE,142,7,35,13,ES_AUTOHSCROLL
+    LTEXT           "조회일자",-1,111,9,29,10
+    LTEXT           "(YYYYMMDD)",-1,111,21,48,10
+END
+
+IDD_DLG_RT DIALOGEX 0, 0, 251, 73
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "실시간 데이터(시세/호가) 요청 예제"
+FONT 9, "돋움", 400, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EDT_JONGMOK,39,6,110,13,ES_AUTOHSCROLL
+    RTEXT           "종목코드",-1,7,8,30,10
+    LTEXT           "ex)101G3000,101G6000",-1,20,40,141,10
+    CONTROL         " 시세",IDC_CHK_SISE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,160,9,32,9
+    CONTROL         " 호가",IDC_CHK_HOGA,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,200,9,34,9
+    LTEXT           "* 실시간데이터를 받고자하는 종목들을  컴머로 구분해서 나열한다.",-1,14,31,218,8
+    LTEXT           "* 종목이 바뀌었을때는 반드시 UNADVISE를 한다.",-1,15,58,165,8
+END
+
+IDD_DLG_FINDER DIALOGEX 0, 0, 135, 275
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "선옵 종목코드"
+FONT 9, "돋움", 400, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_LIST,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,0,6,133,269
+END
+
+AFX_ID_PREVIEW_CLOSE DIALOGEX 0, 0, 206, 126
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "시세/호가 조회 예제"
+FONT 9, "돋움", 400, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EDT_JONGMOK,49,16,54,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "조회",IDC_BTN_INQUERY,151,14,40,18
+    GROUPBOX        "",-1,7,7,192,27
+    RTEXT           "종목코드",-1,15,19,31,10
+    LISTBOX         IDC_LIST,7,37,192,78,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DLG_INVESTCME DIALOGEX 0, 0, 227, 97
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "CME 투자자 시간대별 추이"
+FONT 9, "돋움", 400, 0, 0x0
+BEGIN
+    LISTBOX         IDC_LIST,2,33,218,56,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "금액(백만)",IDC_RADIO_BACK,"Button",BS_AUTORADIOBUTTON,7,9,43,12
+    PUSHBUTTON      "다음",IDC_BTN_INQUERY_NEXT,193,10,27,16,WS_DISABLED
+    PUSHBUTTON      "조회",IDC_BTN_INQUERY2,165,10,27,16
+    CONTROL         "금액(억원)",IDC_RADIO_YUK,"Button",BS_AUTORADIOBUTTON,56,9,42,12
+    CONTROL         "계약",IDC_RADIO_COUNT,"Button",BS_AUTORADIOBUTTON,106,9,28,12
+    GROUPBOX        "",IDC_STATIC,2,0,218,29
+END
+
+IDD_DLG_INVEST DIALOGEX 0, 0, 227, 207
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "투자자 당일 매매추정"
+FONT 9, "돋움", 400, 0, 0x0
+BEGIN
+    CONTROL         "전체",IDC_RADIO_ALL,"Button",BS_AUTORADIOBUTTON,7,9,43,12
+    PUSHBUTTON      "다음",IDC_BTN_INQUERY_NEXT,193,8,27,16,WS_DISABLED
+    PUSHBUTTON      "조회",IDC_BTN_INQUERY,165,8,27,16
+    CONTROL         "외국인",IDC_RADIO_FOREIGN,"Button",BS_AUTORADIOBUTTON,56,9,42,12
+    CONTROL         "기관계",IDC_RADIO_ORGAN,"Button",BS_AUTORADIOBUTTON,106,9,35,12
+    GROUPBOX        "",IDC_STATIC,2,0,218,50
+    LISTBOX         IDC_LIST,2,60,218,140,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDT_JONGMOK,36,27,42,13,ES_AUTOHSCROLL
+    RTEXT           "종목코드",IDC_STATIC,4,29,30,10
+END
+
+IDD_DLG_INVEST_CHU DIALOGEX 0, 0, 298, 283
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "매매추이"
+FONT 9, "돋움", 400, 0, 0x0
+BEGIN
+    PUSHBUTTON      "조회",IDC_BTN_INQUERY,185,28,46,16
+    GROUPBOX        "투자자 추이",IDC_STATIC,2,10,289,40
+    LISTBOX         IDC_LIST,2,114,289,162,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CMB_INVEST,13,27,63,90,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CMB_UPJONGCODE,79,28,41,115,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CMB_QTY,121,28,62,150,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "조회",IDC_BTN_INQUERY2,183,81,46,16
+    GROUPBOX        "프로그램매매 추이",IDC_STATIC,0,63,289,42
+    COMBOBOX        IDC_CMB_INVEST2,11,81,63,125,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CMB_QTY2,75,82,97,69,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DLG_AUTO_SETTING DIALOGEX 0, 0, 279, 373
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "전체설정"
+FONT 9, "굴림", 400, 0, 0x81
+BEGIN
+    DEFPUSHBUTTON   "확인",IDOK,120,350,50,15
+    PUSHBUTTON      "닫기",IDCANCEL,171,350,50,15
+    PUSHBUTTON      "초기화",IDC_BTN_INITSET,222,350,50,15
+    CONTROL         "자동주문",IDC_RDO_AUTO,"Button",BS_AUTORADIOBUTTON | WS_GROUP,15,16,43,10
+    CONTROL         "반자동주문",IDC_RDO_SEMI,"Button",BS_AUTORADIOBUTTON,70,16,50,10
+    GROUPBOX        "주문방식",IDC_STATIC,7,3,265,27
+    CONTROL         "손실제한률",IDC_CHK_LOSS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,45,50,10
+    CONTROL         "목표이익률",IDC_CHK_PROFIT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,61,50,10
+    CONTROL         "목표보전",IDC_CHK_FIX_PROFIT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,77,43,10
+    CONTROL         "손실보전",IDC_CHK_FIX_LOSS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,108,43,10
+    EDITTEXT        IDC_EDT_LOSS,64,43,34,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_PROFIT,64,59,34,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_FIX_PROFIT1,64,75,34,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_FIX_LOSS1,64,106,34,13,ES_AUTOHSCROLL
+    LTEXT           "%",IDC_STATIC,103,45,8,8
+    LTEXT           "%",IDC_STATIC,103,61,8,8
+    LTEXT           "% 초과 후 고가대비",IDC_STATIC,103,77,62,8
+    LTEXT           "% 도달 후 손실제한가 대비",IDC_STATIC,103,108,84,8
+    EDITTEXT        IDC_EDT_FIX_PROFIT2,167,75,34,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_FIX_PROFIT3,167,90,34,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_FIX_LOSS2,190,106,34,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_FIX_LOSS3,190,121,34,13,ES_AUTOHSCROLL
+    LTEXT           "% 하락 또는",IDC_STATIC,205,77,39,8
+    LTEXT           "% 목표보전",IDC_STATIC,205,93,36,8
+    LTEXT           "% 상승 또는",IDC_STATIC,229,108,39,8
+    LTEXT           "% 추가하락",IDC_STATIC,229,123,36,8
+    GROUPBOX        "조건설정",IDC_STATIC,7,32,265,106
+    CONTROL         "",IDC_TAB_RULE,"SysTabControl32",0x0,7,139,265,172
+    GROUPBOX        "신규종목 처리",IDC_STATIC,7,316,265,30
+    CONTROL         "신규 종목 유입시 설정 조건 자동 적용",IDC_CHK_APPLY_NEWITEM,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,329,132,12
+    PUSHBUTTON      "L",IDC_BTN_LOG,7,350,15,15,NOT WS_VISIBLE
+END
+
+IDD_DLG_AUTO_SET_NORMAL DIALOGEX 0, 0, 316, 183
+STYLE DS_SETFONT | WS_CHILD | WS_SYSMENU
+FONT 9, "굴림", 400, 0, 0x81
+BEGIN
+    LTEXT           "유효기간",IDC_STATIC,7,4,28,8
+    COMBOBOX        IDC_CMB_VALID_DATE,210,0,63,164,CBS_DROPDOWN | NOT WS_VISIBLE | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "까지(최대 90일까지)",IDC_STATIC,108,4,64,8
+    LTEXT           "매도비중",IDC_STC_RATE,7,38,28,8
+    COMBOBOX        IDC_CMB_PRICE_TYPE,41,19,63,144,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "(%)",IDC_STATIC,108,38,12,8
+    EDITTEXT        IDC_EDT_RATE,41,36,63,13,ES_AUTOHSCROLL
+    LTEXT           "매도단가",IDC_STC_SEL_PRICE,7,54,28,8
+    COMBOBOX        IDC_CMB_SEL_PRICE,41,52,63,116,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "주문구분",IDC_STATIC,7,21,28,8
+    CONTROL         "시장가",IDC_CHK_BEST_PRICE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,108,21,37,10
+    EDITTEXT        1129,108,52,63,13,ES_AUTOHSCROLL
+    LTEXT           "[일반주문, 분할주문 주의사항]",IDC_STATIC1,7,74,97,8
+    LTEXT           "1. 매도가능 수량을 100%미만으로 등록하였을 때 조건만족시 10주",IDC_STATIC2,12,87,203,8
+    LTEXT           "단위로 거래가 가능한 종목인 경우에 주문수량중 다주수량은 버리고 ",IDC_STATIC3,20,100,211,8
+    LTEXT           "10주 단위로 주문이 전송됩니다. (EX: 매도가능 수량이 90주이고, ",IDC_STATIC4,20,113,203,8
+    LTEXT           "수량이 90%인 경우에 주문수량이 81주로 계산되어 80주만 주문)",IDC_STATIC5,20,126,197,8
+    LTEXT           "2. 분할 주문시에 분할비율로 주문수량이 계산될 때 단주수량은 버리고 마지막",IDC_STATIC6,12,139,240,8
+    LTEXT           "호가에 버린 수량이 적요된 후 1번 항목처럼 10주 단위로 주문전송",IDC_STATIC7,20,152,203,8
+    CONTROL         "",IDC_DTP_VALID_DATE,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,41,2,63,14
+END
+
+IDD_DLG_AUTO_SET_DIV DIALOGEX 0, 0, 316, 183
+STYLE DS_SETFONT | WS_CHILD | WS_SYSMENU
+FONT 9, "굴림", 400, 0, 0x81
+BEGIN
+    LTEXT           "유효기간",IDC_STATIC,7,5,28,8
+    COMBOBOX        IDC_CMB_VALID_DATE,184,3,49,134,CBS_DROPDOWN | NOT WS_VISIBLE | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "까지(최대 90일까지)",IDC_STATIC,94,5,64,8
+    LTEXT           "매도비중",IDC_STC_RATE,7,20,28,8
+    LTEXT           "(%)",IDC_STATIC,94,20,12,8
+    EDITTEXT        IDC_EDT_RATE,41,18,49,13,ES_AUTOHSCROLL
+    LTEXT           "분할기준",IDC_STATIC,7,36,28,8
+    COMBOBOX        IDC_CMB_INC,41,34,49,115,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "분할수",IDC_STATIC,110,36,22,8
+    EDITTEXT        IDC_EDT_COUNT,143,34,49,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "적용",IDC_BTN_DIV_APPLY,194,47,30,15
+    LTEXT           "기준가",IDC_STATIC,7,51,22,8
+    COMBOBOX        IDC_CMB_BASE_PRICE,41,49,49,120,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "분할방향",IDC_STATIC,110,51,28,8
+    COMBOBOX        IDC_CMB_DIR,143,49,49,104,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Static",IDC_STC_DIV,8,66,254,96
+    PUSHBUTTON      "가",IDC_BTN_AVAILSELLVOL,161,1,15,15,NOT WS_VISIBLE | WS_DISABLED
+    LTEXT           "",IDC_STTC_AVAILSELLVOL,135,20,72,8,NOT WS_VISIBLE
+    CONTROL         "",IDC_DTP_VALID_DATE,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,41,2,49,13
+END
+
+IDD_DLG_AUTO_DUMMY_FORM DIALOGEX 0, 0, 546, 301
+STYLE DS_SETFONT | WS_POPUP | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | WS_CAPTION | WS_SYSMENU
+FONT 9, "굴림", 400, 0, 0x81
+BEGIN
+    PUSHBUTTON      "조회",IDC_BTN_REFRESH,194,1,23,13
+    PUSHBUTTON      "전체설정",IDC_BTN_SET_ENV,329,1,36,13
+    PUSHBUTTON      "전체감시",IDC_BTN_WATCH_ALL,218,1,36,13
+    PUSHBUTTON      "전체해제",IDC_BTN_CANCEL_ALL,255,1,36,13
+    PUSHBUTTON      "전체삭제",IDC_BTN_DELETE_ALL,292,1,36,13
+    EDITTEXT        IDC_EDT_ACCOUNT,46,4,60,13,ES_AUTOHSCROLL
+    RTEXT           "계좌번호",-1,12,6,30,10
+    LISTBOX         IDC_LIST,5,17,425,100,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDT_ACCTPWD,142,3,36,13,ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT           "비밀번호",-1,110,7,29,10
+    CONTROL         "",IDC_TAB1,"SysTabControl32",0x0,7,123,422,16
+END
+
+IDD_DLG_AUTO_BASE_FRM DIALOGEX 0, 0, 316, 183
+STYLE DS_SETFONT | WS_CHILD
+FONT 9, "굴림", 400, 0, 0x81
+BEGIN
+    PUSHBUTTON      "초기화",IDC_BTN_INIT,265,19,34,14
+    EDITTEXT        IDC_EDT_JONGMOK,26,5,76,16,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG5 DIALOGEX 0, 0, 316, 182
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_DLG_TEST DIALOGEX 0, 0, 206, 126
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "시세/호가 조회 예제"
+FONT 9, "돋움", 400, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EDT_JONGMOK,49,16,54,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "조회",IDC_BTN_INQUERY,151,14,40,18
+    GROUPBOX        "",-1,7,7,192,27
+    RTEXT           "종목코드",-1,15,19,31,10
+    LISTBOX         IDC_LIST,7,37,192,78,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041203b5"
+        BEGIN
+            VALUE "CompanyName", "TODO: <회사 이름>"
+            VALUE "FileDescription", "TODO: <파일 설명>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "DongbuAPIClient_VC.exe"
+            VALUE "LegalCopyright", "TODO: (c) <회사 이름>.  All rights reserved."
+            VALUE "OriginalFilename", "DongbuAPIClient_VC.exe"
+            VALUE "ProductName", "TODO: <제품 이름>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 949
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_DLG_LOGIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 231
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 285
+    END
+
+    IDD_DLG_ABLEQTY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 220
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 202
+    END
+
+    IDD_DLG_ORDER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 198
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 225
+    END
+
+    IDD_DLG_JANGO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 244
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 225
+    END
+
+    IDD_DLG_CHE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 283
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 225
+    END
+
+    IDD_DLG_DEPOSIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+    END
+
+    IDD_DLG_RT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 244
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 66
+    END
+
+    IDD_DLG_FINDER, DIALOG
+    BEGIN
+        RIGHTMARGIN, 133
+        TOPMARGIN, 6
+    END
+
+    AFX_ID_PREVIEW_CLOSE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 199
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 119
+    END
+
+    IDD_DLG_INVESTCME, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 220
+        BOTTOMMARGIN, 90
+    END
+
+    IDD_DLG_INVEST, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 220
+        BOTTOMMARGIN, 200
+    END
+
+    IDD_DLG_INVEST_CHU, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 291
+        BOTTOMMARGIN, 276
+    END
+
+    IDD_DLG_AUTO_SETTING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 272
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 366
+    END
+
+    IDD_DLG_AUTO_SET_NORMAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        BOTTOMMARGIN, 176
+    END
+
+    IDD_DLG_AUTO_SET_DIV, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        BOTTOMMARGIN, 176
+    END
+
+    IDD_DLG_AUTO_DUMMY_FORM, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 299
+    END
+
+    IDD_DIALOG5, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 175
+    END
+
+    IDD_DLG_TEST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 199
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 119
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE를 초기화할 수 없습니다. OLE 라이브러리 버전이 올바른지 확인하십시오."
+END
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "DongbuAPIClient_VC"
+    IDR_DongbuAPIClientTYPE "\nDongbuAPIClient\nDongbuAPIClient\n\n\nDongbuAPIClientVC.Document\nDongbuAPIClient_VC.Document"
+    IDS_WINDOWS_MANAGER     "창(&W)..."
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "DongbuAPIClient_VC"
+    AFX_IDS_IDLEMESSAGE     "준비"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "새 문서를 만듭니다.\n새로 만들기"
+    ID_FILE_OPEN            "기존 문서를 엽니다.\n열기"
+    ID_FILE_CLOSE           "활성 문서를 닫습니다.\n닫기"
+    ID_FILE_SAVE            "활성 문서를 저장합니다.\n저장"
+    ID_FILE_SAVE_AS         "활성 문서를 새 이름으로 저장합니다.\n다른 이름으로 저장"
+    ID_FILE_PAGE_SETUP      "인쇄 옵션을 변경합니다.\n페이지 설정"
+    ID_FILE_PRINT_SETUP     "프린터 및 인쇄 옵션을 변경합니다.\n인쇄 설정"
+    ID_FILE_PRINT           "활성 문서를 인쇄합니다.\n인쇄"
+    ID_FILE_PRINT_DIRECT    "현재 옵션을 사용하여 활성 문서를 인쇄합니다.\n빠른 인쇄"
+    ID_FILE_PRINT_PREVIEW   "전체 페이지를 표시합니다.\n인쇄 미리 보기"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "프로그램 정보, 버전 번호, 저작권을 표시합니다.\n정보"
+    ID_APP_EXIT             "문서를 저장할지를 묻고 응용 프로그램을 끝냅니다.\n끝내기"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE2       "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE3       "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE4       "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE5       "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE6       "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE7       "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE8       "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE9       "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE10      "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE11      "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE12      "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE13      "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE14      "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE15      "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE16      "현재 문서를 엽니다."
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "다음 창으로 전환합니다.\n다음 창"
+    ID_PREV_PANE            "이전 창으로 전환합니다.\n이전 창"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_NEW           "활성 문서에 대해 다른 창을 엽니다.\n새 창"
+    ID_WINDOW_ARRANGE       "창 맨 아래에 아이콘을 정렬합니다.\n아이콘 정렬"
+    ID_WINDOW_CASCADE       "창이 겹치도록 계단식으로 정렬합니다.\n계단식 창 배열"
+    ID_WINDOW_TILE_HORZ     "창이 겹치지 않도록 바둑판식으로 정렬합니다.\n바둑판식 창 배열"
+    ID_WINDOW_TILE_VERT     "창이 겹치지 않도록 바둑판식으로 정렬합니다.\n바둑판식 창 배열"
+    ID_WINDOW_SPLIT         "활성 창을 여러 개의 창으로 분할합니다.\n분할"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "선택 영역을 지웁니다.\n지우기"
+    ID_EDIT_CLEAR_ALL       "모두 지웁니다.\n모두 지우기"
+    ID_EDIT_COPY            "선택 영역을 복사하여 클립보드에 넣습니다.\n복사"
+    ID_EDIT_CUT             "선택 영역을 잘라내어 클립보드에 넣습니다.\n잘라내기"
+    ID_EDIT_FIND            "지정한 텍스트를 찾습니다.\n찾기"
+    ID_EDIT_PASTE           "클립보드 내용을 삽입합니다.\n붙여넣기"
+    ID_EDIT_REPEAT          "마지막 작업을 반복합니다.\n반복"
+    ID_EDIT_REPLACE         "특정 텍스트를 다른 텍스트로 바꿉니다.\n바꾸기"
+    ID_EDIT_SELECT_ALL      "전체 문서를 선택합니다.\n모두 선택"
+    ID_EDIT_UNDO            "마지막 작업 실행을 취소합니다.\n실행 취소"
+    ID_EDIT_REDO            "이전에 실행 취소된 작업을 다시 실행합니다.\n다시 실행"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_STATUS_BAR      "상태 표시줄을 표시하거나 숨깁니다.\n상태 표시줄 설정/해제"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "창 크기를 변경합니다."
+    AFX_IDS_SCMOVE          "창 위치를 변경합니다."
+    AFX_IDS_SCMINIMIZE      "창을 아이콘으로 축소합니다."
+    AFX_IDS_SCMAXIMIZE      "창을 전체 화면 크기로 확대합니다."
+    AFX_IDS_SCNEXTWINDOW    "다음 문서 창으로 전환합니다."
+    AFX_IDS_SCPREVWINDOW    "이전 문서 창으로 전환합니다."
+    AFX_IDS_SCCLOSE         "문서를 저장할 것인지 확인하고 활성 창을 닫습니다."
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "창을 보통 크기로 복원합니다."
+    AFX_IDS_SCTASKLIST      "작업 목록을 활성화합니다."
+    AFX_IDS_MDICHILD        "이 창을 활성화합니다."
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "인쇄 미리 보기 모드를 닫습니다.\n미리 보기 취소"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STATUS_PANE1        "창 1"
+    IDS_STATUS_PANE2        "창 2"
+    IDS_TOOLBAR_STANDARD    "표준"
+    IDS_TOOLBAR_CUSTOMIZE   "사용자 지정..."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_EDIT_MENU           "편집"
+END
+
+#endif    // 한국어 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE 18, 1
+#pragma code_page(949)
+#include "res\DongbuAPIClient_VC.rc2"  // Microsoft Visual C++ 이외의 다른 도구에서 편집한 리소스입니다.
+#include "l.KOR\afxres.rc"          // 표준 구성 요소입니다.
+#include "l.KOR\afxprint.rc"        // 인쇄 미리 보기 리소스
+#if !defined(_AFXDLL)
+#include "l.KOR\afxribbon.rc"               // MFC 리본 및 컨트롤 막대 리소스
+#endif
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

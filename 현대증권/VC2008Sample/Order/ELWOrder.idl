@@ -1,0 +1,19 @@
+
+	// ELWOrder.idl : IDL source for ELWOrder.exe
+//
+// This file will be processed by the MIDL tool to
+// produce the type library (ELWOrder.tlb) and marshalling code.
+import "oaidl.idl";
+import "ocidl.idl";
+[
+	uuid(F600E89D-02D8-4C1E-8F7F-DFF1175ACEAC),
+	version(1.0),
+	helpstring("ELWOrder 1.0 Type Library")
+]
+library ELWOrderLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+};
+
+	

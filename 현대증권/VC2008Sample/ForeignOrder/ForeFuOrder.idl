@@ -1,0 +1,19 @@
+
+	// ForeFuOrder.idl : IDL source for ForeFuOrder.exe
+//
+// This file will be processed by the MIDL tool to
+// produce the type library (ForeFuOrder.tlb) and marshalling code.
+import "oaidl.idl";
+import "ocidl.idl";
+[
+	uuid(F600E89D-02D8-4C1E-8F7F-DFF1175ACEAC),
+	version(1.0),
+	helpstring("ForeFuOrder 1.0 Type Library")
+]
+library ForeFuOrderLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+};
+
+	
